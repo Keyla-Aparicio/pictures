@@ -4,7 +4,7 @@
     padding: 10px;
 }
 
-.search-bar from {
+.search-bar form {
     display: flex;
     flex-direction: column;
 }

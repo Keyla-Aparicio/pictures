@@ -5,19 +5,18 @@ import searchImages from "./api"
 
 function App() {
   //searchImages('cars')
-  const [images, setIamges] = useState([])
+  const [images, setImages] = useState([])
 
-  const nandleSubmit = async(term) => {
+  const handleSubmit = async(term) => {
     console.log('Usted esta buscando con: ', term)
     const result = await searchImages(term)
-    setIamges(result)
+    setImages(result)
   }
-
   return (
     <>
-    <h1>Pictures App</h1>
-    <SearchBar onSubmit={handleSubmit}/>
-    <ImageList images={images}/> 
+      <h1>Pictures App</h1>
+      <SearchBar onSubmit={handleSubmit}/>
+      <ImageList images={images}/>
     </>
   )
 }

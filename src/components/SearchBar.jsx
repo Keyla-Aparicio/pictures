@@ -16,14 +16,14 @@ const SearchBar = ({ onSubmit }) => {
 
     console.log('term', term)
 
-    return (
-        <div className="search-bar">
-            <form onSubmit={handleFormSubmit}>
-                <label>Termino de la búsqueda:</label>
-                <input onChange={handleChange} value={term}/>
-            </form>
-        </div>
-    )
+  return (
+    <div className="search-bar">
+        <form onSubmit={handleFormSubmit}>
+            <label>Termino de la busqueda:</label>
+            <input onChange={handleChange} value={term}/>
+        </form>
+    </div>
+  )
 }
 
 export default SearchBar
